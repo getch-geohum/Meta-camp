@@ -1,6 +1,7 @@
 # model to train 
 import argparse
-from main_maml import MAML
+# from main_maml import MAML
+from main_maml_deeplab import MAML
 
 def parseArgs():
     parser = argparse.ArgumentParser(description='model agnostic meta learning implementation both for classic and MAML')
