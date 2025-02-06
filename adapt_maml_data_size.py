@@ -26,10 +26,10 @@ if __name__ == "__main__":
         data_path = args.root + '/' + folder
         model_type = ['maml']
         weight_init = ['weight_imagenet']    # D:\MEAT_LEARN\MAML_explore_lr\train\maml
-        weight = {'tza_nduta_21oct2016':'/home/getch/ssl/output/MAMLw/dynamic_weight/adapt/tza_nduta_21oct2016/1e-05=with=1e-06/maml/weight_imagenet/checkpoint.pth',
-                'minawa_12feb2017':'/home/getch/ssl/output/MAMLw/dynamic_weight/adapt/minawa_12feb2017/1e-06=with=1e-06/maml/weight_imagenet/checkpoint.pth',
-                'kutuplong_feb_2018':'/home/getch/ssl/output/MAMLw/dynamic_weight/adapt/kutuplong_feb_2018/0.001=with=0.01/maml/weight_imagenet/checkpoint.pth',
-                'ken_deg_08Apr2017':'/home/getch/ssl/output/MAMLw/dynamic_weight/adapt/ken_deg_08Apr2017/1e-05=with=0.01/maml/weight_imagenet/checkpoint.pth'}
+        weight = {'tza_nduta_21oct2016':'/checkpoint.pth',
+                'minawa_12feb2017':'/checkpoint.pth',
+                'kutuplong_feb_2018':'/checkpoint.pth',
+                'ken_deg_08Apr2017':'/checkpoint.pth'}
         for size in dsize:
             final_out_root = args.weight_path + '/' + '/adapt_weighte_data_size/' + folder + '/{}'.format(str(size))
             print(final_out_root)
